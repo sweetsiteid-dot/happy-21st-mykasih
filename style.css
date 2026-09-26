@@ -1,0 +1,479 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#0d0d0d;
+color:white;
+overflow-x:hidden;
+}
+
+#websiteContent{
+display:none;
+}
+
+/* PASSWORD */
+
+#passwordScreen{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:9999;
+
+background:url("pharita1.jpg");
+background-size:cover;
+background-position:center;
+}
+
+.password-overlay{
+width:100%;
+height:100%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+background:rgba(0,0,0,.65);
+backdrop-filter:blur(8px);
+}
+
+.password-box{
+
+width:90%;
+max-width:380px;
+
+padding:40px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.15);
+
+border-radius:25px;
+
+text-align:center;
+
+box-shadow:0 0 40px rgba(255,255,255,.05);
+}
+
+.password-box h1{
+font-size:50px;
+margin-bottom:10px;
+}
+
+.password-box h2{
+margin-bottom:15px;
+}
+
+.password-box p{
+color:#d9d9d9;
+line-height:1.7;
+}
+
+.password-box input{
+
+width:100%;
+
+padding:14px;
+
+margin-top:15px;
+
+border:none;
+outline:none;
+
+border-radius:12px;
+
+background:rgba(255,255,255,.1);
+
+color:white;
+text-align:center;
+}
+
+.password-box button{
+
+width:100%;
+
+padding:14px;
+
+margin-top:15px;
+
+border:none;
+
+border-radius:12px;
+
+background:white;
+
+color:black;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.3s;
+}
+
+.password-box button:hover{
+transform:scale(1.03);
+}
+
+.hint{
+margin-top:15px;
+font-size:14px;
+opacity:.7;
+}
+
+/* HERO */
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
+padding:30px;
+}
+
+.hero-content{
+
+max-width:700px;
+}
+
+.hero h1{
+
+font-family:'Playfair Display',serif;
+
+font-size:65px;
+
+margin-bottom:15px;
+}
+
+.hero h2{
+
+font-size:35px;
+
+margin-bottom:25px;
+}
+
+.hero p{
+
+line-height:2;
+
+color:#d0d0d0;
+
+margin-bottom:30px;
+}
+
+.hero button{
+
+padding:15px 40px;
+
+border:none;
+
+border-radius:50px;
+
+background:white;
+
+color:black;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.3s;
+}
+
+.hero button:hover{
+transform:translateY(-3px);
+}
+
+/* SECTIONS */
+
+.section{
+
+padding:100px 20px;
+
+text-align:center;
+}
+
+.section-title{
+
+font-size:38px;
+
+margin-bottom:50px;
+
+font-family:'Playfair Display',serif;
+}
+
+/* GLASS CARD */
+
+.glass-card{
+
+max-width:800px;
+
+margin:auto;
+
+padding:40px;
+
+border-radius:25px;
+
+background:rgba(255,255,255,.05);
+
+backdrop-filter:blur(15px);
+
+border:1px solid rgba(255,255,255,.1);
+
+line-height:2;
+}
+
+/* POLAROID */
+
+.polaroid-container{
+
+display:flex;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:30px;
+
+max-width:1200px;
+
+margin:auto;
+}
+
+.polaroid{
+
+width:280px;
+
+background:white;
+
+padding:12px 12px 30px;
+
+border-radius:10px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.4);
+
+transform:rotate(-2deg);
+
+transition:.4s;
+}
+
+.polaroid:nth-child(even){
+transform:rotate(2deg);
+}
+
+.polaroid:hover{
+
+transform:scale(1.05);
+
+cursor:pointer;
+}
+
+.polaroid img{
+
+width:100%;
+
+height:320px;
+
+object-fit:cover;
+
+border-radius:5px;
+}
+
+.polaroid span{
+
+display:block;
+
+margin-top:15px;
+
+color:black;
+
+font-weight:600;
+}
+
+/* REASON CARDS */
+
+.cards{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+max-width:1100px;
+
+margin:auto;
+}
+
+.reason-card{
+
+padding:30px;
+
+border-radius:20px;
+
+background:#171717;
+
+border:1px solid #2a2a2a;
+
+transition:.3s;
+}
+
+.reason-card:hover{
+
+transform:translateY(-6px);
+}
+
+.reason-card h3{
+
+margin:15px 0;
+}
+
+.reason-card p{
+
+color:#d0d0d0;
+}
+
+/* LETTER */
+
+.letter-box{
+
+max-width:900px;
+
+margin:auto;
+
+padding:40px;
+
+border-radius:25px;
+
+background:#171717;
+
+border:1px solid #2a2a2a;
+}
+
+.letter-box p{
+
+text-align:left;
+
+line-height:2;
+}
+
+/* FINAL */
+
+.final-section{
+
+padding:150px 20px;
+
+text-align:center;
+}
+
+.final-section h2{
+
+font-size:40px;
+
+margin-bottom:20px;
+}
+
+.final-section h1{
+
+font-size:70px;
+
+font-family:'Playfair Display',serif;
+
+margin-bottom:30px;
+}
+
+.final-section p{
+
+max-width:700px;
+
+margin:auto;
+
+line-height:2;
+
+color:#d0d0d0;
+}
+
+/* ENDING */
+
+.ending{
+
+padding:150px 20px;
+
+text-align:center;
+
+background:black;
+}
+
+.ending h2{
+
+font-size:45px;
+
+margin-bottom:20px;
+
+font-family:'Playfair Display',serif;
+}
+
+.ending p{
+
+margin-top:10px;
+
+color:#bdbdbd;
+}
+
+/* HEARTS */
+
+#hearts{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+pointer-events:none;
+
+z-index:1;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:42px;
+}
+
+.hero h2{
+font-size:28px;
+}
+
+.section-title{
+font-size:30px;
+}
+
+.final-section h1{
+font-size:45px;
+}
+
+.polaroid{
+width:90%;
+max-width:300px;
+}
+
+  }
